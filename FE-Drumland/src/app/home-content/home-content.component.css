@@ -1,0 +1,14 @@
+.textInfo {
+    width: 900px;
+    border: 5px solid rgb(19, 119, 201);
+    background-color: rgba(114, 175, 224, 0.568);
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+    align-items:center;
+    
+
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
