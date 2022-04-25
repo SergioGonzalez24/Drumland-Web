@@ -1,0 +1,43 @@
+<section class="login py-5 bg-light">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-lg-5">
+                <img src="./assets/img/ICON.svg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-7 text-center py-5">
+                <img src="./assets/img/userlogin.svg" class="img-fluid" alt="">
+
+                <div class="offset-1 col-lg-10">
+                    <!--CREACION DEL FORMULARIO Y LLAMADO AL TYPESCRIPT-->
+                    <form [formGroup]="form" (ngSubmit)="login()">
+                        <!--CONTENEDORES DE ESTILO PARA LOS INPUTS-->
+                        <div class="input-group Input-group-lg mb-3 log">
+                            <span class="input-group-text ">
+                                <!--LLAMADO A LOS ICONOS Y A SUS VALIDADORES-->
+                                <i class="fa-solid fa-user"></i>
+                            </span>
+                            <!--INPUT PARA EL USERNAME-->
+                            <input formControlName="username" type="text" class="form-control" placeholder="Username">
+                        </div>
+                            <!--CONTENEDORES DE ESTILO PARA LOS INPUTS-->
+                        <div class="input-group Input-group-lg mb-2 log">
+                            <span class="input-group-text">
+                                <!--LLAMADO A LOS ICONOS Y A SUS VALIDADORES-->
+                                <i class="fa-solid fa-lock"></i>
+                            </span>
+                            <!--INPUT PARA EL PASSWORD-->
+                            <input formControlName="password" type="password" class="form-control" placeholder="Password">
+                        </div>
+            
+                        <!--BOTON PARA HACER SUBMIT-->
+                        <div class="d-grid gap-2 log">
+                            <button type="submit" class="btn btn-succes btn-lg accessbtn">Login</button>
+                        </div> 
+                            
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
